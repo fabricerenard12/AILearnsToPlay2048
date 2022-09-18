@@ -54,13 +54,6 @@ class Game:
             return True
         return False
 
-    def checkWin(self):
-        for i in self.getMatrix():
-            for j in i:
-                if j == 2048:
-                    return 'You won!'
-        return 'You lost!'
-
     def flipMatrix(self):
         return np.fliplr(self.getMatrix())
 
