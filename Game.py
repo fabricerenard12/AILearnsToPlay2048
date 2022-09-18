@@ -50,10 +50,6 @@ class Game:
         self.gameStatus = status
 
     def checkGameStatus(self):
-        # for i in self.getMatrix():
-        #     for j in i:
-        #         if j == 2048:
-        #             return False
         if self.checkLeft() or self.checkRight() or self.checkUp() or self.checkDown():
             return True
         return False
